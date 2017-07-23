@@ -1,3 +1,48 @@
-div {
-  color: green
+body {
+  background: black;
+  color: white;
+}
+
+.divider {
+  margin-top: 1%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2%;
+}
+
+.header {
+  font-size: 40px;
+}
+
+.main {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+}
+
+.usage {
+  font-size: 30px;
+}
+
+.example-input code {
+  color: red;
+}
+
+.example-input, .example-output, .error {
+  margin-left: 1%;
+}
+
+.input, .output{
+  font-size: 25px;
+  margin-bottom: 1%;
 }

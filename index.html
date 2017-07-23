@@ -6,8 +6,32 @@
   <link rel="stylesheet" href="/public/style.css">
 </head>
 <body>
-  <div>
-    hi there
+  <div class="container">
+    <div class="header">
+      | timestamp api
+    </div>
+    <div class="divider">
+      ====================================================
+    </div>
+    <div class="main">
+      <div class="usage">| usage</div>
+      <div class="description">
+        enter a natural language date or unix timecode as a url parameter and
+        receive a JSON response
+      </div>
+      <div class="example-input">
+        <div class="input">| input</div>
+        <div></div>
+        <code>timestamper.herokuapp.com/May 4, 2014</code>
+        <code>timestamper.herokuapp.com/1399161600</code>
+      </div>
+      <div class="example-output">
+        <div class="output">| output</div>
+        <code>{ "unix": "1399161600", "natural": "May 4, 2014"}</code>
+      </div>
+    </div>
+    <div class="footer">
+    </div>
   </div>
 </body>
 </html>
