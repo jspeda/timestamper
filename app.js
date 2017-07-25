@@ -3,6 +3,8 @@ const app = express();
 const path = require('path');
 const dh = require('./dateHelper');
 
+app.set('port', (process.env.PORT || 8000))
+
 app.use('/public', express.static(__dirname + '/public'))
 
 app.get('/', (req, res) => {
@@ -13,6 +15,6 @@ app.get('/:date', (req, res) => {
   res.send(dh.dateHelper(req.params.date))
 });
 
-app.listen(8000, () => {
-  console.log('listening on port 8000');
+app.listen(app.get('port'), () => {
+  console.log('listening on port', app.get('port'));
 });
