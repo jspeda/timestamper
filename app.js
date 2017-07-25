@@ -10,14 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:date', (req, res) => {
-  // console.log(req.params.date)
   res.send(dh.dateHelper(req.params.date))
-  // res.send(JSON.stringify(
-  //   {
-  //     "unix": req.params.date,
-  //     "natural": req.params.date
-  //   }
-  // ))
 });
 
 app.listen(8000, () => {
